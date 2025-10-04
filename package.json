@@ -1,0 +1,25 @@
+{
+  "name": "bitbucket-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for fetching Bitbucket PR comments and tasks",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "setup": "tsc && node dist/setup-helper.js"
+  },
+  "keywords": ["mcp", "bitbucket", "pull-request"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
