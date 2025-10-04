@@ -4,6 +4,9 @@
   "description": "MCP server for fetching Bitbucket PR comments and tasks",
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "bitbucket-mcp-server": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
